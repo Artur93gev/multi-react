@@ -7,8 +7,8 @@ import DynamicImporter from 'components/unControlled/dynamicImporter';
 const Configs = _ => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/first" render={props => <DynamicImporter {...props} componentName="first" />} />
-    <Route exact path="/second" render={props => <DynamicImporter {...props} componentName="second" />} />
+    <Route path="/first" render={props => <DynamicImporter {...props} componentName="first" />} />
+    <Route path="/second" render={props => <DynamicImporter {...props} componentName="second" />} />
   </Switch>
 );
 
