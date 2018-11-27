@@ -1,11 +1,16 @@
 import React from 'react';
 
+import { RouteError, RouteWrapper } from 'helpers';
+import RouteConfigs from 'routes';
+
 class App extends React.PureComponent {
   render() {
     return (
-      <div>
-        multi react app
-      </div>
+      <RouteError>
+        <RouteWrapper>
+          <RouteConfigs />
+        </RouteWrapper>
+      </RouteError>
     );
   }
 }

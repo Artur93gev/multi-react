@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = _ => (
   <div>
-    In home Component
+    In platform Component
   </div>
 );
 
