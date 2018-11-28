@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 const InnerPage = props => (
   <div>
-    in Second application InnerPage
-    <Link to="/">
-      back home
-    </Link>
+      <button className='button yellow'>
+          <Link to="/">
+              home
+          </Link>
+      </button>
   </div>
 );
 

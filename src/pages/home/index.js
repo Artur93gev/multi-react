@@ -4,12 +4,11 @@ import { navigateToRoute } from 'helpers';
 
 const Home = props => (
   <div>
-    In platform Component
-    <button onClick={() => navigateToRoute(props.history, '/first', true)}>
-      go to the first app
+    <button className='button blue' onClick={() => navigateToRoute(props.history, '/first', true)}>
+       first
     </button>
-    <button onClick={() => navigateToRoute(props.history, '/second', true)}>
-      go to the second app
+    <button className='button green' onClick={() => navigateToRoute(props.history, '/second', true)}>
+        second
     </button>
   </div>
 );

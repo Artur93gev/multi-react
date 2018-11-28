@@ -4,17 +4,15 @@ import { navigateToRoute } from 'helpers';
 
 const InnerPage = props => (
   <div>
-    in
-    <strong onClick={() => navigateToRoute(props.history, '/first', true)}>
-      First
-    </strong>
-    application InnerPage Component
-    <button onClick={() => navigateToRoute(props.history, '/', true)}>
-      Home
-    </button>
-    <button onClick={() => navigateToRoute(props.history, '/second', true)}>
-      Second application
-    </button>
+      <button className='button yellow' onClick={() => navigateToRoute(props.history, '/first', true)}>
+          first
+      </button>
+      <button className='button blue' onClick={() => navigateToRoute(props.history, '/', true)}>
+          Home
+      </button>
+      <button className='button green' onClick={() => navigateToRoute(props.history, '/second', true)}>
+          Second application
+      </button>
   </div>
 );
 

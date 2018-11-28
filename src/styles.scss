@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+#root {
+  text-align: center;
+  padding-top: 150px;
+  background-image: url("https://i.imgur.com/J1Oioug.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.button {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  border-color: unset;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 5px;
+  &.blue {
+    background: #3f51b5;
+  }
+  &.green {
+    background: #4caf50;
+  }
+  &.yellow {
+    background: #ffc107;
+  }
+}
