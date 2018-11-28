@@ -2,6 +2,7 @@ import React from 'react';
 import { Router } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
+import configs from 'configs';
 import Loader from 'components/unControlled/loader';
 
 class RouteError extends React.PureComponent {
@@ -27,6 +28,8 @@ class RouteError extends React.PureComponent {
   }
 }
 
+const navigateToRoute = (history, url, isAbsolute = false) => history.push(`${isAbsolute ? '' : configs.routePrefix}${url}`);
+
 const history = createBrowserHistory();
 
 const RouteWrapper = props => (
@@ -40,4 +43,5 @@ const RouteWrapper = props => (
 export {
   RouteError,
   RouteWrapper,
+  navigateToRoute,
 };
