@@ -7,7 +7,7 @@ import configs from 'configs';
 const RouteConfigs = _ => (
   <Switch>
     <Route path={`${configs.routePrefix}/inner`} component={InnerPage} />
-    <Redirect to={`${configs.routePrefix}/inner`} />
+    <Redirect to={`${configs.routePrefix}/inner`} from={`${configs.routePrefix}/`} />
   </Switch>
 );
 

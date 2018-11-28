@@ -1,8 +1,20 @@
 import React from 'react';
 
-const InnerPage = _ => (
+import { navigateToRoute } from 'helpers';
+
+const InnerPage = props => (
   <div>
-    in First application InnerPage Component
+    in
+    <strong onClick={() => navigateToRoute(props.history, '/first', true)}>
+      First
+    </strong>
+    application InnerPage Component
+    <button onClick={() => navigateToRoute(props.history, '/', true)}>
+      Home
+    </button>
+    <button onClick={() => navigateToRoute(props.history, '/second', true)}>
+      Second application
+    </button>
   </div>
 );
 

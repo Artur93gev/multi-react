@@ -1,8 +1,16 @@
 import React from 'react';
 
-const Home = _ => (
+import { navigateToRoute } from 'helpers';
+
+const Home = props => (
   <div>
-    in First application Home Component
+    in First application
+    <strong onClick={() => navigateToRoute(props.history, '/', true)}>
+      Home Component
+    </strong>
+    <button onClick={() => navigateToRoute(props.history, '/inner')}>
+      inner page
+    </button>
   </div>
 );
 

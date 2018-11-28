@@ -5,9 +5,9 @@ import Home from '../pages/home';
 import InnerPage from '../pages/innerPage';
 import configs from 'configs';
 
-const RouteConfigs = _ => (
+const RouteConfigs = props => (
   <Switch>
-    <Route path={`${configs.routePrefix}/`} component={Home} />
+    <Route exact path={`${configs.routePrefix}/`} component={Home} />
     <Route path={`${configs.routePrefix}/inner`} component={InnerPage} />
   </Switch>
 );

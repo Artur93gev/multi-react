@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const InnerPage = _ => (
+const InnerPage = props => (
   <div>
-    in Second application InnerPage Component
+    in Second application InnerPage
+    <Link to="/">
+      back home
+    </Link>
   </div>
 );
 
