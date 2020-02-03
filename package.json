@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "history": "^4.7.2",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
     "react-router-dom": "^4.3.1",
